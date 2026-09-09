@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
+    
     <h1>Ajouter/Modifier un compte</h1>
 
     <?php
@@ -33,7 +34,7 @@
         }
     }
     ?>
-
+    <?php echo '<p><a href="detail.php?id=' . $numero . '">retour</a></p>'; ?>
     <form method="post" action="">
         <label for="numero">Numéro du compte :</label>
         <input type="text" id="numero" name="numero" value="<?php echo $numero; ?>" required />
